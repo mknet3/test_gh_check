@@ -1,0 +1,16 @@
+name: w2
+on:
+  workflow_run:
+    workflows:
+      - 'w1'
+    branches: 
+      - 'main'
+    types:
+      - completed      
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
