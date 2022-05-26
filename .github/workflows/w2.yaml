@@ -2,7 +2,7 @@ name: Build & Push
 on:
   workflow_run:
     workflows:
-      - 'w1'
+      - 'tests'
     branches: 
       - 'main'
     types:
