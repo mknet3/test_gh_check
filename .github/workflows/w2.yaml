@@ -1,4 +1,4 @@
-name: w2
+name: Build & Push
 on:
   workflow_run:
     workflows:
@@ -19,7 +19,7 @@ jobs:
     - uses: LouisBrunner/checks-action@v1.1.1
       if: always()
       with:
-        check_id: w2
+        name: Build & Push
         token: ${{ secrets.GITHUB_TOKEN }}
         conclusion: ${{ job.status }}   
         
