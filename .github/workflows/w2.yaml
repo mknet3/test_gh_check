@@ -21,6 +21,5 @@ jobs:
       with:
         check_id: w2
         token: ${{ secrets.GITHUB_TOKEN }}
-        name: Test XYZ
         conclusion: ${{ job.status }}   
         
