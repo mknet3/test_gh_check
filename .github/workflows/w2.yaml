@@ -21,7 +21,5 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         name: Test XYZ
-        conclusion: ${{ job.status }}
-        output: |
-          {"summary":${{ steps.test.outputs.summary }}}        
+        conclusion: ${{ job.status }}   
         
